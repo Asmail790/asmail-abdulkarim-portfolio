@@ -33,7 +33,7 @@ export const softwareEngineerPortfolio: PortfolioData = {
     },
   },
   profile: {
-    firstName: "AAsmail",
+    firstName: "Asmail",
     lastName: "Abdulkarim",
     role: "Software Engineer",
     tagline: [
