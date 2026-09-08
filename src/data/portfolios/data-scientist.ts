@@ -156,14 +156,14 @@ export const dataScientistPortfolio: PortfolioData = {
         "Using machine learning to automatically tune MySQL configuration.",
       highlights: [
         "Automated MySQL performance tuning by applying Bayesian optimization (HyperMapper) to configuration parameters.",
-        "Benchmarked the results with BenchBase on Azure, written in Python.",
+        "Benchmarked the results with BenchBase on AWS, written in Python.",
         "Delivered major speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
       ],
       tech: [
         allSkills["Python"],
         allSkills["MySQL"],
         allSkills["SQL"],
-        allSkills["Azure"],
+        allSkills["AWS"],
         allSkills["scikit-learn"],
       ],
       year: "2022",

@@ -220,7 +220,7 @@ export const fullstackPortfolio: PortfolioData = {
       highlights: [
         "Built a Next.js/TypeScript icon generator that produces custom icons via OpenAI DALL-E (2 and 3).",
         "Abstracted the generator behind a swappable interface and layered in Auth.js, shadcn/ui, Kysely ORM, Docker and SQLite.",
-        "Verified the flow with Playwright and Vitest and shipped it on Vercel, previously Azure.",
+        "Verified the flow with Playwright and Vitest and shipped it on AWS and Vercel.",
       ],
       tech: [
         allSkills["TypeScript"],
@@ -232,7 +232,7 @@ export const fullstackPortfolio: PortfolioData = {
         allSkills["Docker"],
         allSkills["Playwright"],
         allSkills["Vitest"],
-        allSkills["Azure"],
+        allSkills["AWS"],
       ],
       year: "2023 — 2024",
       featured: true,

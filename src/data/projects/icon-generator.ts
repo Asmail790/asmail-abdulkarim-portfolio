@@ -11,7 +11,7 @@ export const iconGenerator: Project = {
   highlights: [
     "Built a Next.js/TypeScript icon generator that produces custom icons via OpenAI DALL-E (2 and 3).",
     "Abstracted the generator behind a swappable interface and layered in Auth.js, shadcn/ui, Kysely ORM, Docker and SQLite.",
-    "Verified the flow with Playwright and Vitest and shipped it on Vercel, previously Azure.",
+    "Verified the flow with Playwright and Vitest and shipped it on AWS and Vercel.",
   ],
   tech: [
     allSkills["TypeScript"],
@@ -23,7 +23,7 @@ export const iconGenerator: Project = {
     allSkills["Docker"],
     allSkills["Playwright"],
     allSkills["Vitest"],
-    allSkills["Azure"],
+    allSkills["AWS"],
   ],
   year: "2023 — 2024",
   featured: false,
@@ -44,7 +44,7 @@ export const iconGeneratorTesterQa: Project = {
   highlights: [
     "Built a Next.js/TypeScript icon generator powered by OpenAI DALL-E (2 and 3), with Auth.js, shadcn/ui, Kysely ORM, Docker and SQLite.",
     "Verified the AI feature end to end with Playwright and Vitest so regressions surface before release.",
-    "Shipped it to Vercel, previously Azure, with automated E2E coverage.",
+    "Shipped it to Vercel and AWS with automated E2E coverage.",
   ],
   tech: [
     allSkills["TypeScript"],
@@ -54,7 +54,7 @@ export const iconGeneratorTesterQa: Project = {
     allSkills["Playwright"],
     allSkills["Vitest"],
     allSkills["Docker"],
-    allSkills["Azure"],
+    allSkills["AWS"],
   ],
   proof: ["Playwright + Vitest suites", "E2E tested"],
 };
@@ -63,7 +63,7 @@ export const iconGeneratorTesterQa: Project = {
 export const iconGeneratorDevops: Project = {
   ...iconGenerator,
   highlights: [
-    "Dockerized a Next.js/TypeScript icon generator and deployed it on Vercel, previously Azure.",
+    "Dockerized a Next.js/TypeScript icon generator and deployed it on AWS and Vercel.",
     "Ran the stack on Auth.js, Kysely ORM, and SQLite for a stable hosted platform.",
     "Enabled users to generate, save, and manage custom icons.",
   ],
@@ -71,10 +71,10 @@ export const iconGeneratorDevops: Project = {
     allSkills["TypeScript"],
     allSkills["Next.js"],
     allSkills["Docker"],
-    allSkills["Azure"],
+    allSkills["AWS"],
     allSkills["Vercel"],
     allSkills["OpenAI"],
   ],
   featured: true,
-  proof: ["Vercel + Azure hosting", "Dockerized app"],
+  proof: ["Vercel + AWS hosting", "Dockerized app"],
 };

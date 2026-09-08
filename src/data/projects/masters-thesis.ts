@@ -10,14 +10,14 @@ export const mastersThesis: Project = {
     "Using machine learning to automatically tune MySQL configuration.",
   highlights: [
     "Automated MySQL performance tuning by applying Bayesian optimization (HyperMapper) to configuration parameters.",
-    "Benchmarked the results with BenchBase on Azure, written in Python.",
+    "Benchmarked the results with BenchBase on AWS, written in Python.",
     "Delivered major speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
   ],
   tech: [
     allSkills["Python"],
     allSkills["MySQL"],
     allSkills["SQL"],
-    allSkills["Azure"],
+    allSkills["AWS"],
     allSkills["scikit-learn"],
   ],
   year: "2022",
@@ -39,13 +39,13 @@ export const mastersThesisDataScientist: Project = {
   featured: true,
 };
 
-/** DevOps wording — emphasizes Azure benchmarking. */
+/** DevOps wording — emphasizes AWS benchmarking. */
 export const mastersThesisDevops: Project = {
   ...mastersThesis,
   highlights: [
     "Automated MySQL performance tuning by applying Bayesian optimization to configuration parameters.",
-    "Benchmarked results on Azure with BenchBase across TPC-C, Twitter, and YCSB workloads.",
+    "Benchmarked results on AWS with BenchBase across TPC-C, Twitter, and YCSB workloads.",
     "Delivered significant speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
   ],
-  proof: ["Azure benchmarks", "440% TPC-C speedup"],
+  proof: ["AWS benchmarks", "440% TPC-C speedup"],
 };

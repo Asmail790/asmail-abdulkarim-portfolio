@@ -404,7 +404,7 @@ export const softwareEngineerPortfolio: PortfolioData = {
       highlights: [
         "Built a Next.js/TypeScript icon generator that produces custom icons via OpenAI DALL-E (2 and 3).",
         "Abstracted the generator behind a swappable interface and layered in Auth.js, shadcn/ui, Kysely ORM, Docker and SQLite.",
-        "Verified the flow with Playwright and Vitest and shipped it on Vercel, previously Azure.",
+        "Verified the flow with Playwright and Vitest and shipped it on AWS and Vercel.",
       ],
       tech: [
         allSkills["TypeScript"],
@@ -416,7 +416,7 @@ export const softwareEngineerPortfolio: PortfolioData = {
         allSkills["Docker"],
         allSkills["Playwright"],
         allSkills["Vitest"],
-        allSkills["Azure"],
+        allSkills["AWS"],
       ],
       year: "2023 — 2024",
       featured: false,
@@ -455,14 +455,14 @@ export const softwareEngineerPortfolio: PortfolioData = {
         "Using machine learning to automatically tune MySQL configuration.",
       highlights: [
         "Automated MySQL performance tuning by applying Bayesian optimization (HyperMapper) to configuration parameters.",
-        "Benchmarked the results with BenchBase on Azure, written in Python.",
+        "Benchmarked the results with BenchBase on AWS, written in Python.",
         "Delivered major speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
       ],
       tech: [
         allSkills["Python"],
         allSkills["MySQL"],
         allSkills["SQL"],
-        allSkills["Azure"],
+        allSkills["AWS"],
         allSkills["scikit-learn"],
       ],
       year: "2022",

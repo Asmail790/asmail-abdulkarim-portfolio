@@ -261,6 +261,12 @@ export const allSkills = {
       "Microsoft's cloud platform for scalable hosting, storage, and infrastructure.",
     includeInResume: true,
   },
+  AWS: {
+    name: "AWS",
+    description:
+      "Amazon Web Services' cloud platform for scalable compute (EC2), storage, and infrastructure.",
+    includeInResume: true,
+  },
   "GitHub Actions": {
     name: "GitHub Actions",
     description: "CI/CD automation for build, test, and deploy pipelines.",

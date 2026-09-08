@@ -158,7 +158,7 @@ export const devopsPortfolio: PortfolioData = {
   quickFacts: [
     { include: true, value: "Docker/Nginx", label: "Self-hosting stack" },
     { include: true, value: "Azure + Cloudflare", label: "Cloud deployments" },
-    { include: true, value: "440%", label: "Perf tuning (thesis on Azure)" },
+    { include: true, value: "440%", label: "Perf tuning (thesis on AWS)" },
   ],
   experience: [],
   projects: [
@@ -219,7 +219,7 @@ export const devopsPortfolio: PortfolioData = {
       description:
         "A website that generates icons with OpenAI's DALL-E.",
       highlights: [
-        "Dockerized a Next.js/TypeScript icon generator and deployed it on Vercel, previously Azure.",
+        "Dockerized a Next.js/TypeScript icon generator and deployed it on AWS and Vercel.",
         "Ran the stack on Auth.js, Kysely ORM, and SQLite for a stable hosted platform.",
         "Enabled users to generate, save, and manage custom icons.",
       ],
@@ -227,7 +227,7 @@ export const devopsPortfolio: PortfolioData = {
         allSkills["TypeScript"],
         allSkills["Next.js"],
         allSkills["Docker"],
-        allSkills["Azure"],
+        allSkills["AWS"],
         allSkills["Vercel"],
         allSkills["OpenAI"],
       ],
@@ -235,7 +235,7 @@ export const devopsPortfolio: PortfolioData = {
       featured: true,
       liveUrl: "https://icon-generator-asmail790s-projects.vercel.app/home",
       repoUrl: null,
-      proof: ["Vercel + Azure hosting", "Dockerized app"],
+      proof: ["Vercel + AWS hosting", "Dockerized app"],
     },
     {
       include: true,
@@ -296,13 +296,13 @@ export const devopsPortfolio: PortfolioData = {
         "Using machine learning to automatically tune MySQL configuration.",
       highlights: [
         "Automated MySQL performance tuning by applying Bayesian optimization to configuration parameters.",
-        "Benchmarked results on Azure with BenchBase across TPC-C, Twitter, and YCSB workloads.",
+        "Benchmarked results on AWS with BenchBase across TPC-C, Twitter, and YCSB workloads.",
         "Delivered significant speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
       ],
       tech: [
         allSkills["MySQL"],
         allSkills["SQL"],
-        allSkills["Azure"],
+        allSkills["AWS"],
         allSkills["Python"],
         allSkills["scikit-learn"],
       ],
@@ -311,7 +311,7 @@ export const devopsPortfolio: PortfolioData = {
       liveUrl:
         "https://lup.lub.lu.se/student-papers/search/publication/9103095",
       repoUrl: null,
-      proof: ["Azure benchmarks", "440% TPC-C speedup"],
+      proof: ["AWS benchmarks", "440% TPC-C speedup"],
     },
     {
       include: true,

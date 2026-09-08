@@ -219,7 +219,7 @@ export const testerQaPortfolio: PortfolioData = {
       highlights: [
         "Built a Next.js/TypeScript icon generator powered by OpenAI DALL-E (2 and 3), with Auth.js, shadcn/ui, Kysely ORM, Docker and SQLite.",
         "Verified the AI feature end to end with Playwright and Vitest so regressions surface before release.",
-        "Shipped it to Vercel, previously Azure, with automated E2E coverage.",
+        "Shipped it to Vercel and AWS with automated E2E coverage.",
       ],
       tech: [
         allSkills["TypeScript"],
@@ -229,7 +229,7 @@ export const testerQaPortfolio: PortfolioData = {
         allSkills["Playwright"],
         allSkills["Vitest"],
         allSkills["Docker"],
-        allSkills["Azure"],
+        allSkills["AWS"],
       ],
       year: "2023 — 2024",
       featured: true,
