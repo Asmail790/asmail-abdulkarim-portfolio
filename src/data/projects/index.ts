@@ -1,0 +1,15 @@
+export { eriduTech, eriduTechSoftwareEngineer, eriduTechTesterQa, eriduTechDevops } from "@/data/projects/eridu-tech";
+export { switchChallenge, switchChallengeTesterQa, switchChallengeDevops } from "@/data/projects/switch-challenge";
+export { intervalTraining } from "@/data/projects/interval-training";
+export { surveillanceSystem, surveillanceSystemDevops, surveillanceSystemDataScientist } from "@/data/projects/surveillance-system";
+export { puzzleSolver, puzzleSolverDataScientist } from "@/data/projects/puzzle-solver";
+export { cppBackend, cppBackendTesterQa } from "@/data/projects/cpp-backend";
+export { yolov1, yolov1DataScientist } from "@/data/projects/yolov1";
+export { documentManagement, documentManagementBackend, documentManagementTesterQa } from "@/data/projects/document-management";
+export { phonedb, phonedbBackend, phonedbTesterQa } from "@/data/projects/phonedb";
+export { iconGenerator, iconGeneratorFullstack, iconGeneratorTesterQa, iconGeneratorDevops } from "@/data/projects/icon-generator";
+export { wordSegmenter, wordSegmenterDataScientist } from "@/data/projects/word-segmenter";
+export { mastersThesis, mastersThesisBackend, mastersThesisDataScientist, mastersThesisDevops } from "@/data/projects/masters-thesis";
+export { housePrice } from "@/data/projects/house-price";
+export { ecommerce, ecommerceBackend, ecommerceDevops } from "@/data/projects/ecommerce";
+export { selfHosted, selfHostedDevops } from "@/data/projects/self-hosted";

@@ -1,5 +1,5 @@
 import { renderLogoMark, iconSize, iconContentType } from "@/og/logo-mark";
-import { mainPortfolio } from "@/data/portfolios/main-portfolio";
+import { softwareEngineerPortfolio } from "@/data/portfolios/software-engineer";
 
 export const size = iconSize;
 export const contentType = iconContentType;
@@ -10,7 +10,7 @@ export const contentType = iconContentType;
  * `icon` file convention (adds `<link rel="icon">` automatically).
  */
 export default async function Icon() {
-  const { profile } = mainPortfolio;
+  const { profile } = softwareEngineerPortfolio;
   const initials = `${profile.firstName[0]}${profile.lastName[0]}`;
 
   return renderLogoMark(initials);

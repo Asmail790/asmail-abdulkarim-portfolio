@@ -255,10 +255,10 @@ export const allSkills = {
       "Containerization for reproducible environments and CI/CD pipelines.",
     includeInResume: true,
   },
-  AWS: {
-    name: "AWS",
+  Azure: {
+    name: "Azure",
     description:
-      "Cloud platform for scalable hosting, storage, and infrastructure.",
+      "Microsoft's cloud platform for scalable hosting, storage, and infrastructure.",
     includeInResume: true,
   },
   "GitHub Actions": {
@@ -626,6 +626,214 @@ export const allSkills = {
     name: "Stress Management",
     description:
       "Staying focused and productive under pressure in fast-paced environments.",
+    includeInResume: true,
+  },
+  // Languages & mobile (from Asmail's projects)
+  Kotlin: {
+    name: "Kotlin",
+    description:
+      "Modern JVM language I use for Android app development with Jetpack Compose.",
+    includeInResume: true,
+  },
+  Android: {
+    name: "Android",
+    description:
+      "Building native Android apps, services, overlays, and lifecycle-aware UIs.",
+    includeInResume: true,
+  },
+  "Jetpack Compose": {
+    name: "Jetpack Compose",
+    description:
+      "Declarative UI toolkit for building modern Android interfaces in Kotlin.",
+    includeInResume: true,
+  },
+  Electron: {
+    name: "Electron",
+    description:
+      "Framework for building cross-platform desktop applications with web technologies.",
+    includeInResume: true,
+  },
+  // .NET & web from Asmail's projects
+  "ASP.NET Core": {
+    name: "ASP.NET Core",
+    description:
+      "Cross-platform framework for building modern web apps, APIs, and Razor Pages.",
+    includeInResume: true,
+  },
+  "Razor Pages": {
+    name: "Razor Pages",
+    description:
+      "Page-based model for building server-rendered ASP.NET Core interfaces.",
+    includeInResume: true,
+  },
+  "Entity Framework Core": {
+    name: "Entity Framework Core",
+    description:
+      "Object-relational mapper for .NET that streamlines database access.",
+    includeInResume: true,
+  },
+  jQuery: {
+    name: "jQuery",
+    description:
+      "Fast, small JavaScript library that simplifies DOM manipulation and events.",
+    includeInResume: true,
+  },
+  "SvelteKit": {
+    name: "SvelteKit",
+    description:
+      "Application framework for building full-stack Svelte apps with SSR and routing.",
+    includeInResume: true,
+  },
+  "Cloudflare D1": {
+    name: "Cloudflare D1",
+    description:
+      "Serverless SQLite database on Cloudflare's edge for global, low-latency reads.",
+    includeInResume: true,
+  },
+  "Drizzle ORM": {
+    name: "Drizzle ORM",
+    description:
+      "Lightweight, type-safe TypeScript ORM with SQL-like query building.",
+    includeInResume: true,
+  },
+  Kysely: {
+    name: "Kysely",
+    description:
+      "Type-safe, autocompletion-friendly SQL query builder for TypeScript.",
+    includeInResume: true,
+  },
+  // Testing, tooling & infra from Asmail's projects
+  Storybook: {
+    name: "Storybook",
+    description:
+      "Component workshop for building, showcasing, and testing UI in isolation.",
+    includeInResume: true,
+  },
+  Puppeteer: {
+    name: "Puppeteer",
+    description:
+      "Node.js library for controlling headless Chrome in automated tests and scraping.",
+    includeInResume: true,
+  },
+  Catch2: {
+    name: "Catch2",
+    description:
+      "C++ test framework for fast, readable unit and integration tests.",
+    includeInResume: true,
+  },
+  CMake: {
+    name: "CMake",
+    description:
+      "Cross-platform build system used to compile and manage native C/C++ projects.",
+    includeInResume: true,
+  },
+  Postman: {
+    name: "Postman",
+    description:
+      "API client for designing, testing, and documenting REST APIs.",
+    includeInResume: true,
+  },
+  OpenAPI: {
+    name: "OpenAPI",
+    description:
+      "Specification for describing, validating, and generating REST API contracts.",
+    includeInResume: true,
+  },
+  Linux: {
+    name: "Linux",
+    description:
+      "Open-source operating system I use for development, servers, and self-hosting.",
+    includeInResume: true,
+  },
+  Cloudflare: {
+    name: "Cloudflare",
+    description:
+      "Edge network providing DNS, CDN, Workers, and serverless hosting.",
+    includeInResume: true,
+  },
+  Vercel: {
+    name: "Vercel",
+    description:
+      "Frontend cloud platform for deploying Next.js and static applications.",
+    includeInResume: true,
+  },
+  CircleCI: {
+    name: "CircleCI",
+    description:
+      "Cloud CI/CD platform for automating build, test, and deploy pipelines.",
+    includeInResume: true,
+  },
+  Wireshark: {
+    name: "Wireshark",
+    description:
+      "Network protocol analyzer for inspecting and troubleshooting traffic.",
+    includeInResume: true,
+  },
+  // AI / ML / data from Asmail's projects
+  OpenCV: {
+    name: "OpenCV",
+    description:
+      "Open-source computer vision library for image and video processing.",
+    includeInResume: true,
+  },
+  PyTorch: {
+    name: "PyTorch",
+    description:
+      "Deep learning framework for building and training neural networks.",
+    includeInResume: true,
+  },
+  "scikit-learn": {
+    name: "scikit-learn",
+    description:
+      "Python library for classical machine learning and data modeling.",
+    includeInResume: true,
+  },
+  NumPy: {
+    name: "NumPy",
+    description:
+      "Fundamental Python package for fast numerical and array computing.",
+    includeInResume: true,
+  },
+  Keras: {
+    name: "Keras",
+    description:
+      "High-level neural network API for fast model prototyping in Python.",
+    includeInResume: true,
+  },
+  TensorBoard: {
+    name: "TensorBoard",
+    description:
+      "Visualization toolkit for inspecting and understanding ML training runs.",
+    includeInResume: true,
+  },
+  OpenAI: {
+    name: "OpenAI",
+    description:
+      "AI platform and APIs (e.g. DALL-E, GPT) for generative features.",
+    includeInResume: true,
+  },
+  YOLO: {
+    name: "YOLO",
+    description:
+      "Real-time object detection models for recognizing objects in images and video.",
+    includeInResume: true,
+  },
+  SQL: {
+    name: "SQL",
+    description:
+      "Structured query language for storing, querying, and managing relational data.",
+    includeInResume: true,
+  },
+  "Raspberry Pi": {
+    name: "Raspberry Pi",
+    description:
+      "Low-cost single-board computers used for embedded systems and self-hosting.",
+    includeInResume: true,
+  },
+  FFmpeg: {
+    name: "FFmpeg",
+    description:
+      "Multimedia framework for recording, converting, and streaming audio/video.",
     includeInResume: true,
   },
 } satisfies Record<string, Skill>;

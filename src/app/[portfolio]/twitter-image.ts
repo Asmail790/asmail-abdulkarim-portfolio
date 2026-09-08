@@ -1,5 +1,5 @@
 import { allPortfolios } from "@/data/portfolios";
-import { mainPortfolio } from "@/data/portfolios/main-portfolio";
+import { softwareEngineerPortfolio } from "@/data/portfolios/software-engineer";
 import {
   renderPortfolioOgImage,
   ogAlt,
@@ -7,7 +7,7 @@ import {
   ogContentType,
 } from "@/og/og-image";
 
-export const alt = ogAlt(mainPortfolio);
+export const alt = ogAlt(softwareEngineerPortfolio);
 export const size = ogSize;
 export const contentType = ogContentType;
 

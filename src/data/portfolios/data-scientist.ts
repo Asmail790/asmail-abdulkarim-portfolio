@@ -1,0 +1,302 @@
+import { allSkills } from "@/data/all-skills";
+import type { PortfolioData } from "@/data/types";
+import imageUrl from "../../../public/face.png";
+
+export const dataScientistPortfolio: PortfolioData = {
+  uiSettings: {
+    showMarquee: true,
+    showPortfolioImage: true,
+    showQuickFacts: false,
+    showResume: true,
+    sectionLimits: {
+      education: 6,
+      experience: 6,
+      projects: 6,
+      skills: 6,
+      certificates: 6,
+      technicalWritings: 6,
+      proofLimit: 6,
+      pointsLimit: 6,
+    },
+  },
+  resumeSettings: {
+    showPortfolioImage: true,
+    sectionLimits: {
+      education: null,
+      experience: 4,
+      projects: null,
+      skills: null,
+      certificates: null,
+      technicalWritings: null,
+      proofLimit: null,
+      pointsLimit: null,
+    },
+  },
+  profile: {
+    firstName: "Asmail",
+    lastName: "Abdulkarim",
+    role: "Software Engineer — Data & ML",
+    tagline: [
+      {
+        text: "Software engineer with a master's in computer science and a passion for ",
+        emphasis: false,
+      },
+      {
+        text: "turning data into insights",
+        emphasis: true,
+      },
+      {
+        text: " — building machine-learning and data-analysis projects in Python.",
+        emphasis: false,
+      },
+    ],
+    bio: [
+      [
+        {
+          text: "I'm a software engineer with a master's degree in computer science and a passion for turning data into insights. I'm driven by exploring new creative projects in machine learning and data analytics. My expertise includes Python, Java, and TypeScript/JavaScript.",
+          emphasis: false,
+        },
+      ],
+      [
+        {
+          text: "My master's thesis used Bayesian optimization to tune MySQL parameters, achieving up to 440% benchmark speedups. I've also implemented object detection and word segmentation models, and done end-to-end house-price regression analysis.",
+          emphasis: false,
+        },
+      ],
+    ],
+    availableForWork: true,
+    location: "Malmö, Sweden",
+    email: "Asmail.Abdulkarim.125@gmail.com",
+    phone: "+46-735-678-698",
+    heroBadge: null,
+    image: imageUrl,
+    githubUrl: "https://github.com/Asmail790",
+    linkedin: "https://www.linkedin.com/in/asmail-abdulkarim-5250a3181/",
+    twitter: null,
+    youtube: null,
+    blog: null,
+  },
+  education: [
+    {
+      include: true,
+      includeInResume: true,
+      degree: "Master of Science",
+      major: "Computer Science",
+      school: "LTH, Lund University",
+      period: "2016 — 2021",
+      description:
+        "Master's degree in Computer Science with a primary focus on software engineering and a secondary focus on machine intelligence. Studied language technology, compilers, constraint programming, artificial intelligence, machine learning, and image analysis.",
+    },
+    {
+      include: true,
+      includeInResume: true,
+      degree: "Programming in C++",
+      major: "University course (7.5 hp)",
+      school: "Kristianstad University",
+      period: "2023",
+      description: "Programming course in C++. Course points: 7.5 hp.",
+    },
+    {
+      include: true,
+      includeInResume: true,
+      degree: "Programming in C",
+      major: "University course (7.5 hp)",
+      school: "Kristianstad University",
+      period: "2023",
+      description: "Programming course in C. Course points: 7.5 hp.",
+    },
+  ],
+  languages: [
+    { include: true, name: "Swedish", level: "Fluent", includeInResume: true },
+    { include: true, name: "English", level: "Fluent", includeInResume: true },
+  ],
+  skills: {
+    "Data Analysis": [
+      allSkills["Python"],
+      allSkills["Pandas"],
+      allSkills["NumPy"],
+      allSkills["Matplotlib"],
+      allSkills["scikit-learn"],
+      allSkills["SQL"],
+    ],
+    "Machine Learning": [
+      allSkills["PyTorch"],
+      allSkills["Keras"],
+      allSkills["scikit-learn"],
+      allSkills["OpenCV"],
+      allSkills["YOLO"],
+      allSkills["TensorBoard"],
+    ],
+    Languages: [
+      allSkills["Python"],
+      allSkills["Java"],
+      allSkills["TypeScript"],
+      allSkills["C"],
+      allSkills["C++"],
+    ],
+    Backend: [
+      allSkills["Node.js"],
+      allSkills["REST APIs"],
+      allSkills["MySQL"],
+      allSkills["Azure"],
+    ],
+  },
+  quickFacts: [
+    { include: true, value: "440%", label: "TPC-C speedup (thesis)" },
+    { include: true, value: "YOLOv1", label: "Object detection from scratch" },
+    { include: true, value: "Kaggle", label: "House price regression" },
+  ],
+  experience: [],
+  projects: [
+    {
+      include: true,
+      includeInResume: true,
+      title: "Master's Thesis — MySQL Performance Tuning",
+      description:
+        "Using machine learning to automatically tune MySQL configuration.",
+      highlights: [
+        "Automated MySQL performance tuning by applying Bayesian optimization (HyperMapper) to configuration parameters.",
+        "Benchmarked the results with BenchBase on Azure, written in Python.",
+        "Delivered major speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
+      ],
+      tech: [
+        allSkills["Python"],
+        allSkills["MySQL"],
+        allSkills["SQL"],
+        allSkills["Azure"],
+        allSkills["scikit-learn"],
+      ],
+      year: "2022",
+      featured: true,
+      liveUrl:
+        "https://lup.lub.lu.se/student-papers/search/publication/9103095",
+      repoUrl: null,
+      proof: ["440% TPC-C speedup", "Bayesian optimization"],
+    },
+    {
+      include: true,
+      includeInResume: true,
+      title: "House Sale Price Analysis",
+      description:
+        "A regression analysis predicting house sale prices from property features.",
+      highlights: [
+        "Predicted house sale prices with regression across features such as build date, heating, room count, and lot area.",
+        "Cleaned noisy sale data with outlier detection and imputation using pandas, scipy, sklearn, mlxtend, matplotlib, and seaborn.",
+        "Delivered an end-to-end, interpretable prediction notebook.",
+      ],
+      tech: [
+        allSkills["Python"],
+        allSkills["Pandas"],
+        allSkills["NumPy"],
+        allSkills["scikit-learn"],
+        allSkills["Matplotlib"],
+        allSkills["SQL"],
+      ],
+      year: "2023",
+      featured: true,
+      liveUrl:
+        "https://www.kaggle.com/code/asmailabdulkarim/house-prices-final",
+      repoUrl: null,
+      proof: ["Kaggle notebook", "Regression + outlier detection"],
+    },
+    {
+      include: true,
+      includeInResume: true,
+      title: "Reimplementation of YOLOv1 Object Detection",
+      description:
+        "A from-scratch reimplementation of YOLOv1 for learning, in Python.",
+      highlights: [
+        "Reimplemented the original YOLOv1 object-detection model from scratch in Python to truly understand how detection models work.",
+        "Trained and monitored the model with PyTorch, TorchVision, and TensorBoard.",
+      ],
+      tech: [
+        allSkills["Python"],
+        allSkills["PyTorch"],
+        allSkills["NumPy"],
+        allSkills["TensorBoard"],
+      ],
+      year: "2023",
+      featured: true,
+      liveUrl: null,
+      repoUrl: "https://github.com/Asmail790/Yolov1",
+      proof: ["From-scratch YOLOv1"],
+    },
+    {
+      include: true,
+      includeInResume: true,
+      title: "Multilingual Neural Word Segmenter",
+      description:
+        "A neural word segmenter that splits contractions across languages.",
+      highlights: [
+        "Trained a neural network to split contractions that standard tokenizers mishandle — such as \"don't\" into \"do\" + \"not\".",
+        "Achieved correct multilingual splits like \"qu'environ\" into \"qu\" + \"environ\" using sklearn, Keras, NumPy, and Matplotlib.",
+      ],
+      tech: [
+        allSkills["Python"],
+        allSkills["Keras"],
+        allSkills["scikit-learn"],
+        allSkills["NumPy"],
+        allSkills["Matplotlib"],
+      ],
+      year: "2021",
+      featured: false,
+      liveUrl: null,
+      repoUrl: null,
+      proof: ["Neural word segmentation"],
+    },
+    {
+      include: true,
+      includeInResume: true,
+      title: "Puzzle Solver for 'Unblock Me'",
+      description:
+        "An Android app that solves 'Unblock Me' puzzles and guides the user to the solution.",
+      highlights: [
+        "Developed an Android app in Kotlin and Python that solves 'Unblock Me' boards in the fewest steps and guides the user through the solution.",
+        "Integrated a YOLOv8s detection model (Ultralytics), PyTorch-Android, the MediaProjection API, and Chaquopy to read and solve live boards.",
+        "Automated block movement on rooted devices for fully hands-free solving.",
+      ],
+      tech: [
+        allSkills["Kotlin"],
+        allSkills["Python"],
+        allSkills["Android"],
+        allSkills["OpenCV"],
+        allSkills["PyTorch"],
+        allSkills["YOLO"],
+        allSkills["scikit-learn"],
+        allSkills["NumPy"],
+      ],
+      year: "2023 — 2024",
+      featured: false,
+      liveUrl: null,
+      repoUrl: null,
+      proof: ["YOLOv8s block detection", "AI + Android"],
+    },
+    {
+      include: true,
+      includeInResume: true,
+      title: "Surveillance System",
+      description:
+        "A home surveillance system with door alerts and real-time face detection.",
+      highlights: [
+        "Engineered a home surveillance system that notifies in real time when the front door opens.",
+        "Processed live video for face detection on Raspberry Pi hardware using Python, TypeScript, Kotlin, and C with OpenCV and FFmpeg.",
+        "Enabled users to jump directly to face-detection timestamps in recorded footage.",
+      ],
+      tech: [
+        allSkills["Python"],
+        allSkills["OpenCV"],
+        allSkills["Raspberry Pi"],
+        allSkills["FFmpeg"],
+        allSkills["Linux"],
+      ],
+      year: "2025 — Ongoing",
+      featured: false,
+      liveUrl: null,
+      repoUrl: null,
+      proof: ["Real-time face detection"],
+    },
+  ],
+  technicalWritings: [],
+  certificates: [],
+  sectionOrder: ["projects", "education"],
+};
