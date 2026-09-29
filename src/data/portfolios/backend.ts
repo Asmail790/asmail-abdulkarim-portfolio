@@ -169,20 +169,19 @@ export const backendPortfolio: PortfolioData = {
     { include: true, value: "440%", label: "MySQL perf speedup (thesis)" },
     { include: true, value: "Co-founder", label: "eridu-tech open source" },
   ],
-  experience: [],
-  projects: [
+  experience: [
     {
       include: true,
       includeInResume: true,
-      title: "eridu-tech (@daiso-tech/core)",
-      description:
-        "Co-founder of eridu-tech, an open-source backend foundation toolkit for TypeScript.",
-      highlights: [
+      role: "Co-founder, @daiso-tech/core",
+      company: "eridu-tech",
+      period: "2024 — Ongoing",
+      points: [
         "Co-founded eridu-tech, an open-source backend foundation toolkit for TypeScript, to stop teams re-building the same backend capabilities for every project.",
         "Implemented a dependency-injection framework from scratch and validated the dependency graph, covering it with comprehensive unit tests.",
         "Delivered a reusable, tested DI component that now anchors the toolkit's backend foundation.",
       ],
-      tech: [
+      stack: [
         allSkills["TypeScript"],
         allSkills["Node.js"],
         allSkills["Unit Tests"],
@@ -191,12 +190,62 @@ export const backendPortfolio: PortfolioData = {
         allSkills["Event Bus"],
         allSkills["Clean Architecture"],
       ],
-      year: "2024 — Ongoing",
-      featured: true,
+      summary: null,
       liveUrl: "https://www.eridu-tech.io/",
       repoUrl: null,
       proof: ["Open-source backend toolkit", "DI framework from scratch"],
     },
+    {
+      include: true,
+      includeInResume: true,
+      role: "Developer, Document Management App",
+      company: "Personal Project",
+      period: "2024 — 2025",
+      points: [
+        "Streamlined dense, scattered Swedish work-environment documents into a single desktop app for searching, summarizing, and exporting.",
+        "Built the tool in TypeScript/React/Electron, pulling data from the Swedish Work Environment Authority and Allabolag and summarizing PDFs with OpenAI.",
+        "Engineered search with sqlite FTS5, data handling with Kysely, UI with Mantine, and schema validation with zod — backed by Vitest and a CircleCI pipeline.",
+      ],
+      stack: [
+        allSkills["TypeScript"],
+        allSkills["SQLite"],
+        allSkills["Kysely"],
+        allSkills["OpenAI"],
+        allSkills["Vitest"],
+        allSkills["Electron"],
+        allSkills["CircleCI"],
+      ],
+      summary: null,
+      liveUrl: null,
+      repoUrl: null,
+      proof: ["PDF summarization with OpenAI", "SQLite FTS5 search"],
+    },
+    {
+      include: true,
+      includeInResume: true,
+      role: "Master's Thesis — MySQL Performance Tuning",
+      company: "LTH, Lund University",
+      period: "2022",
+      points: [
+        "Automated MySQL performance tuning by applying Bayesian optimization (HyperMapper) to configuration parameters.",
+        "Benchmarked the results with BenchBase on AWS, written in Python.",
+        "Delivered major speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
+      ],
+      stack: [
+        allSkills["Python"],
+        allSkills["MySQL"],
+        allSkills["SQL"],
+        allSkills["AWS"],
+        allSkills["scikit-learn"],
+      ],
+      summary: null,
+      liveUrl:
+        "https://lup.lub.lu.se/student-papers/search/publication/9103095",
+      repoUrl: null,
+      proof: ["440% TPC-C speedup", "Bayesian optimization"],
+    },
+  ],
+  projects: [
     {
       include: true,
       includeInResume: true,
@@ -252,31 +301,6 @@ export const backendPortfolio: PortfolioData = {
     {
       include: true,
       includeInResume: true,
-      title: "Master's Thesis — MySQL Performance Tuning",
-      description:
-        "Using machine learning to automatically tune MySQL configuration.",
-      highlights: [
-        "Automated MySQL performance tuning by applying Bayesian optimization (HyperMapper) to configuration parameters.",
-        "Benchmarked the results with BenchBase on AWS, written in Python.",
-        "Delivered major speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
-      ],
-      tech: [
-        allSkills["Python"],
-        allSkills["MySQL"],
-        allSkills["SQL"],
-        allSkills["AWS"],
-        allSkills["scikit-learn"],
-      ],
-      year: "2022",
-      featured: true,
-      liveUrl:
-        "https://lup.lub.lu.se/student-papers/search/publication/9103095",
-      repoUrl: null,
-      proof: ["440% TPC-C speedup", "Bayesian optimization"],
-    },
-    {
-      include: true,
-      includeInResume: true,
       title: "C++ Backend for 'Unblock Me' Puzzle Solver",
       description:
         "A C++ rewrite of the puzzle solver's Python backend for higher efficiency.",
@@ -297,32 +321,6 @@ export const backendPortfolio: PortfolioData = {
       liveUrl: null,
       repoUrl: "https://github.com/Asmail790/unblock_me_solver_cpp_extension",
       proof: ["C++ via JNI", "CMake + Catch2"],
-    },
-    {
-      include: true,
-      includeInResume: true,
-      title: "Document Management App",
-      description:
-        "A desktop app for managing and summarizing Swedish work-environment documents.",
-      highlights: [
-        "Streamlined dense, scattered Swedish work-environment documents into a single desktop app for searching, summarizing, and exporting.",
-        "Built the tool in TypeScript/React/Electron, pulling data from the Swedish Work Environment Authority and Allabolag and summarizing PDFs with OpenAI.",
-        "Engineered search with sqlite FTS5, data handling with Kysely, UI with Mantine, and schema validation with zod — backed by Vitest and a CircleCI pipeline.",
-      ],
-      tech: [
-        allSkills["TypeScript"],
-        allSkills["SQLite"],
-        allSkills["Kysely"],
-        allSkills["OpenAI"],
-        allSkills["Vitest"],
-        allSkills["Electron"],
-        allSkills["CircleCI"],
-      ],
-      year: "2024 — 2025",
-      featured: false,
-      liveUrl: null,
-      repoUrl: null,
-      proof: ["PDF summarization with OpenAI", "SQLite FTS5 search"],
     },
     {
       include: true,
@@ -364,5 +362,5 @@ export const backendPortfolio: PortfolioData = {
       skills: [allSkills["Azure"], allSkills["DevOps"]],
     },
   ],
-  sectionOrder: ["projects", "certificates", "education"],
+  sectionOrder: ["experience", "projects", "certificates", "education"],
 };

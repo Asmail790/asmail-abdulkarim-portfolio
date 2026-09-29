@@ -146,33 +146,33 @@ export const dataScientistPortfolio: PortfolioData = {
     { include: true, value: "YOLOv1", label: "Object detection from scratch" },
     { include: true, value: "Kaggle", label: "House price regression" },
   ],
-  experience: [],
-  projects: [
+  experience: [
     {
       include: true,
       includeInResume: true,
-      title: "Master's Thesis — MySQL Performance Tuning",
-      description:
-        "Using machine learning to automatically tune MySQL configuration.",
-      highlights: [
+      role: "Master's Thesis — MySQL Performance Tuning",
+      company: "LTH, Lund University",
+      period: "2022",
+      points: [
         "Automated MySQL performance tuning by applying Bayesian optimization (HyperMapper) to configuration parameters.",
         "Benchmarked the results with BenchBase on AWS, written in Python.",
         "Delivered major speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
       ],
-      tech: [
+      stack: [
         allSkills["Python"],
         allSkills["MySQL"],
         allSkills["SQL"],
         allSkills["AWS"],
         allSkills["scikit-learn"],
       ],
-      year: "2022",
-      featured: true,
+      summary: null,
       liveUrl:
         "https://lup.lub.lu.se/student-papers/search/publication/9103095",
       repoUrl: null,
       proof: ["440% TPC-C speedup", "Bayesian optimization"],
     },
+  ],
+  projects: [
     {
       include: true,
       includeInResume: true,
@@ -298,5 +298,5 @@ export const dataScientistPortfolio: PortfolioData = {
   ],
   technicalWritings: [],
   certificates: [],
-  sectionOrder: ["projects", "education"],
+  sectionOrder: ["experience", "projects", "education"],
 };

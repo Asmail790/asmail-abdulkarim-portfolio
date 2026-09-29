@@ -160,44 +160,19 @@ export const devopsPortfolio: PortfolioData = {
     { include: true, value: "Azure + Cloudflare", label: "Cloud deployments" },
     { include: true, value: "440%", label: "Perf tuning (thesis on AWS)" },
   ],
-  experience: [],
-  projects: [
+  experience: [
     {
       include: true,
       includeInResume: true,
-      title: "Self-Hosted Services",
-      description:
-        "A self-hosted home server serving Seafile and Forgejo.",
-      highlights: [
-        "Set up private, self-controlled file sharing and git hosting on a self-hosted home server.",
-        "Containerized services with Docker Compose and routed traffic through Nginx as a TCP proxy.",
-        "Operated the stack on Linux and diagnosed traffic with Wireshark.",
-      ],
-      tech: [
-        allSkills["Docker"],
-        allSkills["Linux"],
-        allSkills["Nginx"],
-        allSkills["Wireshark"],
-        allSkills["Raspberry Pi"],
-      ],
-      year: "2024 — 2025",
-      featured: true,
-      liveUrl: null,
-      repoUrl: null,
-      proof: ["Seafile + Forgejo self-hosted", "Docker Compose + Nginx"],
-    },
-    {
-      include: true,
-      includeInResume: true,
-      title: "eridu-tech (@daiso-tech/core)",
-      description:
-        "Co-founder of eridu-tech, an open-source backend foundation toolkit for TypeScript.",
-      highlights: [
+      role: "Co-founder, @daiso-tech/core",
+      company: "eridu-tech",
+      period: "2024 — Ongoing",
+      points: [
         "Co-founded eridu-tech, an open-source backend foundation toolkit for TypeScript.",
         "Implemented a dependency-injection framework from scratch and validated its dependency graph with unit tests.",
         "Automated CI/CD with CircleCI and GitHub Actions-style pipelines so releases stay green and repeatable.",
       ],
-      tech: [
+      stack: [
         allSkills["TypeScript"],
         allSkills["Node.js"],
         allSkills["CircleCI"],
@@ -206,12 +181,37 @@ export const devopsPortfolio: PortfolioData = {
         allSkills["Unit Tests"],
         allSkills["Integration Tests"],
       ],
-      year: "2024 — Ongoing",
-      featured: true,
+      summary: null,
       liveUrl: "https://www.eridu-tech.io/",
       repoUrl: null,
       proof: ["CI/CD pipelines", "Open-source backend toolkit"],
     },
+    {
+      include: true,
+      includeInResume: true,
+      role: "Master's Thesis — MySQL Performance Tuning",
+      company: "LTH, Lund University",
+      period: "2022",
+      points: [
+        "Automated MySQL performance tuning by applying Bayesian optimization to configuration parameters.",
+        "Benchmarked results on AWS with BenchBase across TPC-C, Twitter, and YCSB workloads.",
+        "Delivered significant speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
+      ],
+      stack: [
+        allSkills["MySQL"],
+        allSkills["SQL"],
+        allSkills["AWS"],
+        allSkills["Python"],
+        allSkills["scikit-learn"],
+      ],
+      summary: null,
+      liveUrl:
+        "https://lup.lub.lu.se/student-papers/search/publication/9103095",
+      repoUrl: null,
+      proof: ["AWS benchmarks", "440% TPC-C speedup"],
+    },
+  ],
+  projects: [
     {
       include: true,
       includeInResume: true,
@@ -291,31 +291,6 @@ export const devopsPortfolio: PortfolioData = {
     {
       include: true,
       includeInResume: true,
-      title: "Master's Thesis — MySQL Performance Tuning",
-      description:
-        "Using machine learning to automatically tune MySQL configuration.",
-      highlights: [
-        "Automated MySQL performance tuning by applying Bayesian optimization to configuration parameters.",
-        "Benchmarked results on AWS with BenchBase across TPC-C, Twitter, and YCSB workloads.",
-        "Delivered significant speedups over default settings — 440% on TPC-C, 261% on Twitter, and 200% on YCSB.",
-      ],
-      tech: [
-        allSkills["MySQL"],
-        allSkills["SQL"],
-        allSkills["AWS"],
-        allSkills["Python"],
-        allSkills["scikit-learn"],
-      ],
-      year: "2022",
-      featured: false,
-      liveUrl:
-        "https://lup.lub.lu.se/student-papers/search/publication/9103095",
-      repoUrl: null,
-      proof: ["AWS benchmarks", "440% TPC-C speedup"],
-    },
-    {
-      include: true,
-      includeInResume: true,
       title: "Surveillance System",
       description:
         "A home surveillance system with door alerts and real-time face detection.",
@@ -355,5 +330,5 @@ export const devopsPortfolio: PortfolioData = {
       skills: [allSkills["Azure"], allSkills["DevOps"]],
     },
   ],
-  sectionOrder: ["projects", "certificates", "education"],
+  sectionOrder: ["experience", "projects", "certificates", "education"],
 };
