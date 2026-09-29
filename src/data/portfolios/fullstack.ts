@@ -187,7 +187,6 @@ export const fullstackPortfolio: PortfolioData = {
       period: "2024 — Present",
       points: [
         "Built and maintain switch-challenge-practice.org, a full-stack TypeScript/Svelte platform for practising aptitude tests, backed by a Cloudflare D1 database.",
-        "Integrated betterAuth, oRPC, Drizzle, Storybook, Playwright, zod, tailwindcss, sqlite, vitest, svgdotjs and jsonld into one cohesive product.",
         "Grew the platform to 2000-3000 unique visitors each month.",
       ],
       stack: [
